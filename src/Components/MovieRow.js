@@ -7,7 +7,10 @@ class MovieRow extends Component {
 
         return (<tr>
             <td>
-                <img src={"https://image.tmdb.org/t/p/original" + movie.poster_path} style={{width: "100px"}} />
+                <img 
+                    src={"https://image.tmdb.org/t/p/original" + movie.poster_path} 
+                    style={{width: "100px"}} 
+                    alt={"poster"} />
             </td>
             <td> {movie.original_title} </td>
             <td> {movie.overview} </td>

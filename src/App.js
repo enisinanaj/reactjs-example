@@ -19,7 +19,7 @@ class MainApp extends Component {
     );
 
     var moviesAsJson = await response.json();
-    this.setState({movies: moviesAsJson.results})
+    this.setState({ movies: moviesAsJson.results })
   }
 
   handleInputChange(inputElement) {
@@ -51,6 +51,7 @@ class MainApp extends Component {
       
       { /* Movies result list */ }
       <MovieTable movies={this.state.movies} />
+
     </div>)
   }
 }
