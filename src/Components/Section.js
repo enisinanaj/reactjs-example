@@ -4,10 +4,10 @@ import Title from './Title'
 class Section extends Component {
 
     render() {
-        return (<div>
+        return (<div style={this.props.style}>
             <Title content={this.props.title} />
 
-            <p>
+            <p style={{}}>
                 { this.props.children }
             </p>
         </div>)
